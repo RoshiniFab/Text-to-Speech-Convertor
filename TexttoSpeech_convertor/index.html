@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Basic concept for tect to speech coversion">
+    <title>Demo</title>
+    <style>
+        #bio{
+            background-color: black;
+            color:white;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <input type="text" id="name">
+        <button onclick="updateBio()">Submit</button>
+    </div>
+    <div>
+    <h1>Profile name</h1>
+    <h1 id="bio"></h1>
+    </div>
+    <script>
+        function updateBio(){
+            let userData = document.getElementById("name").value;
+            document.getElementById("bio").innerHTML=userData;
+        }
+    </script>
+
+
+
+
+
+</body>
+</html>
